@@ -1,0 +1,509 @@
+ 
+ * {
+	Margin: 0;
+	padding: 0;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&family=Roboto:ital,wght@0,100;0,400;1,100&display=swap');
+
+/*
+font-family: 'Baloo 2', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+
+.logo {
+	background-color: black;
+	display: inline-block;
+	width: 100%;
+}
+
+.logo img {
+	height: calc(1.4em + 1vw);
+	width: calc(1.5em + 1.3vw);
+	float: left;
+	margin: 1%;
+}
+
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: rgb(227, 226, 226);
+}
+
+main{
+	margin: 1%;
+}
+
+.fondo {
+	background-image: url(../multimedia/Ushuaia-132.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+
+h1 {
+	color: white;
+	background-color: black;
+	padding-top: 1%;
+	font-size: calc(1.2em + 1vw);
+}
+
+h2 {
+	font-size: calc(1em + 1vw);
+	color: black;
+}
+
+h3 {
+	margin-top: .1%;
+	margin-bottom: .05%;
+	font-size: calc(1em + 0.5vw);
+	padding-right: 2%;
+	color: black;
+	width: fit-content;
+}
+
+h4 {
+	margin-top: 7px;
+	font-size: calc(.8em + 0.4vw);
+	padding-left: 10px;
+	padding-right: 10px;
+	color: black;
+	width: fit-content;
+}
+
+/*empieza menu nav*/
+.menu {
+	margin-top: 0.9vw;
+	margin-bottom: 0.5vw;
+	font-family: 'Roboto';
+	text-align: center;
+	font-size: calc(0.75em + 0.75vw);
+}
+
+.menu li {
+	display: inline-block;
+	text-align: center;
+}
+
+.menu li a {
+	width: fit-content;
+	background-color: #7e7e7e;
+	color: white;
+	padding: calc(0.25em + 0.25vw);
+	text-decoration: none;
+}
+
+.menu li a:hover {
+	color: black;
+	background-color: white;
+	border-style: solid;
+	border-color: black;
+	border: 1px;
+}
+/*termina menu nav*/
+
+
+/*empieza footer*/
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: calc(2.6em + 1.4vw);
+	background-color: gray;
+}
+.footer a {
+	color: white;
+	padding: .5vw;
+	margin: .1vw;
+	width: fit-content;
+	font-size: calc(.4em + .8vw);
+}
+.footer p {
+	color: white;
+	width: fit-content;
+	padding: .5vw;
+	margin: .1vw;
+	font-size: calc(.4em + .8vw);
+}
+.footer div {
+	margin: .1vw;
+	padding: .1vw;
+}
+.footer img {
+	width: calc(1.2em + 1vw);
+	height: calc(1.2em + 1vw);
+}
+/*termina footer*/
+
+
+/*empieza contacto*/
+.aviso {
+	background-color: black;
+	color: white;
+	font-size: calc(.6em + .4vw);
+	width: fit-content;
+	float: inherit;
+	padding: 2px;
+	margin: 5px;
+}
+
+.contacto {
+	display: block;
+	text-align: center;
+}
+
+.contacto input {
+	font-family: 'Baloo 2', cursive;
+	font-size: 16px;
+	padding: 5px;
+	width: 250px;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.contacto select {
+	font-family: 'Baloo 2', cursive;
+	font-size: 16px;
+	padding: 5px;
+	width: 265px;
+	height: 50px;
+}
+
+.contacto textarea {
+	font-size: 16px;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.check {
+	display: inline-block;
+	font-family: 'Baloo 2', cursive;
+	background-color: white;
+	font-size: 16px;
+	width: 450px;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.check input {
+	width: 16px;
+	float: left;
+	padding: 2px;
+	margin-top: 4px;
+}
+
+#contacForm {
+	background-color: black;
+	color: white;
+}
+/*termina contacto*/
+
+/* empieza index */
+.textofull {
+	margin: 1%;
+}
+
+.textofull p {
+	width: 94%;
+	padding: 1%;
+	margin-left: 1vw;
+	margin-right: 1vw;
+	color: black;
+	font-size: calc(.7em + .4vw);
+}
+/*
+.textohalf {
+	margin: 1vw;
+*/
+
+.textohalf p {
+	width: 42vw;
+	padding: 1%;
+	margin-left: 1vw;
+	color: black;
+	font-size: calc(.7em + .4vw);
+}
+
+.textohalf ul {
+	width: 44vw;
+	padding: 1%;
+	margin-left: 2vw;
+	color: black;
+	font-size: calc(.7em + .4vw);
+}
+
+
+.bodyGrid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: repeat(10, auto);
+	gap: 0px 0px;
+	grid-template-areas:
+		"imgIndex1 imgIndex1"
+		"texto1 texto1"
+		"imgIndex2 texto2"
+		"titulo3 titulo3"
+		"imgIndex3 texto3"
+		"texto4 texto4"
+		"titulo5 titulo5"
+		"imgIndex5 texto5"
+		"texto6 texto6"
+		"texto7 texto7"
+	;
+}
+
+.imgIndex1 {
+	grid-area: imgIndex1;
+}
+
+.imgIndex1 img {
+	width: 96vw;
+	height: 30vw;
+	margin: 0.5vw;
+	border-radius: 1%;
+}
+
+.texto1 {grid-area: texto1;}
+
+.imgIndex2 {grid-area: imgIndex2;}
+
+.imgIndex2 img {
+	width: 45vw;
+	height: 30vw;
+	margin: 0.5vw;
+	border-radius: 1%;
+}
+
+.texto2 {grid-area: texto2;}
+
+.titulo3 {grid-area: titulo3;
+	width: 99vw;
+}
+
+.texto3 {grid-area: texto3;}
+
+.imgIndex3 {grid-area: imgIndex3; }
+
+.imgIndex3 img {
+	width: 45vw;
+	height: 30vw;
+	margin: 0.5vw;
+	border-radius: 1%;
+}
+
+.texto4 {grid-area: texto4;}
+
+.titulo5 {grid-area: titulo5;}
+
+.imgIndex5 {grid-area: imgIndex5;}
+
+.imgIndex5 img {
+	width: 45vw;
+	height: 30vw;
+	margin: 0.5vw;
+	border-radius: 1%;
+}
+
+.texto5 {grid-area: texto5;}
+
+.texto6 {grid-area: texto6;}
+
+.texto7 {grid-area: texto7;}
+
+.titulo8 {grid-area: titulo8;}
+
+.iframe {grid-area: iframe;}
+
+.texto8 {grid-area: texto8;}
+
+.section {
+	display: flex;
+	flex-direction: row;
+}
+
+.section iframe {
+	width: 48vw;
+	height: 30vw;
+	margin: 0.5vw;
+	border-radius: 1%;
+}
+
+.section p {
+padding: 1%;
+}
+/*termina index*/
+
+/*galeria de imagenes */
+.galeria {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.galeria a img {
+	width: 31vw;
+	height: auto;
+}
+
+.par{
+	display: none;
+}
+
+
+/*cursos*/
+.imagen_half_cover {
+	width: 45vw;
+	height: 30vw;
+	margin: 0.5vw;
+	border-radius: 1%;
+}
+
+.cursoGrid {
+	display: grid;
+	grid-template-columns: 48vw 49vw;
+	grid-template-rows: repeat(3, auto);
+	gap: 0px 0px;
+	grid-template-areas:
+		"tituloC1 tituloC1"
+		"imgCurso1 imgCurso2"
+		"textoC1 textoC2"
+	;
+}
+
+.tituloC1 {
+	grid-area: tituloC1;
+}
+
+.imgCurso1 {
+	grid-area: imgCurso1;
+}
+
+.textoC1 {
+	grid-area: textoC1;
+}
+
+.imgCurso2 {
+	grid-area: imgCurso2;
+}
+
+.textoC2 {
+	grid-area: textoC2;
+}
+
+
+/*nosotros*/
+.about {
+	display: flex;
+	flex-direction: row;
+}
+
+/* media query tablet y celular */
+@media screen and (max-width: 768px) {
+
+/*MQ index*/
+	.bodyGrid {
+		grid-template-columns: 100vw;
+		grid-template-rows: repeat(13, auto);
+		grid-template-areas:
+			"imgIndex1"
+			"texto1"
+			"imgIndex2"
+			"texto2"
+			"titulo3"
+			"imgIndex3"
+			"texto3"
+			"texto4"
+			"titulo5"
+			"imgIndex5"
+			"texto5"
+			"texto6"
+			"texto7";
+	}
+
+	/*MQ Index*/
+	.textofull p {
+		width: 92%;
+	}
+
+	.textohalf p {
+		width: 93vw;
+		padding: 2vw;
+		margin-left: 1vw;
+		margin-right: 2vw;
+		font-size: calc(.7em + .4vw);
+	}
+
+	.imgIndex2 img {
+		width: 94vw;
+		height: 60vw;
+		margin: 0.5vw;
+		;
+		border-radius: 1%;
+	}
+
+	.imgIndex3 img {
+		width: 94vw;
+		height: 60vw;
+		margin: 0.5vw;
+		;
+		border-radius: 1%;
+	}
+
+	.imgIndex5 img {
+		width: 94vw;
+		height: 60vw;
+		margin: 0.5vw;
+		border-radius: 1%;
+	}
+
+	.section {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.section iframe {
+		width: 96vw;
+		height: 60vw;
+		margin: 0.5vw;
+		border-radius: 1%;
+	}
+	.imagen_half_cover {
+		width: 94vw;
+		height: 60vw;
+		margin: 0.5vw;
+		border-radius: 1%;
+	}
+
+
+
+	/*MQ Galeria*/
+	.galeria a img {
+		width: 44vw;
+		height: auto;
+		padding: 2vw;
+	}
+
+	.par{
+		display: block;
+	}
+
+	/*MQ Cursos*/
+	.cursoGrid {
+		display: grid;
+		grid-template-columns:99vw;
+		grid-template-rows: repeat(5, auto);
+		gap: 0px 0px;
+		grid-template-areas:
+			"tituloC1"
+			"imgCurso1"
+			"textoC1"
+			"imgCurso2"
+			"textoC2";
+	}
+
+	/*MQ Nosotros*/
+	.about {
+		flex-direction: column;
+	}
+
+} ;
