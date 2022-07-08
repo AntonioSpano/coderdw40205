@@ -6,12 +6,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Fotografia de Naturaleza - Acerca de mi</title>
-	<meta name="description" content="Curso de fotografía digital de naturaleza.">
+	<meta name="description" content="Fotografía digital de naturaleza.">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link rel="stylesheet" href="../estilos/estilos.css" />
-	<link
-	rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-	/>	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -19,27 +18,30 @@
 		<a name="arriba"></a>
 		<div class="logo">
 			<a href="../index.html"> <img class="logo" src="../multimedia/logo.png" alt="icono camara fotografia"> </a>
-			<h1>Fotografia de la naturaleza</h1>
+			<h1 class="gradiente">Fotografia de la naturaleza</h1>
 		</div>
-		<div>
-			<nav>
-				<ul class="menu animate__animated animate__backInLeft">
-					<li><a href="../index.html">Inicio</a></li>
-					<li><a href="curso.html">Cursos y talleres</a></li>
-					<li><a href="galeria.html">Galeria</a></li>
-					<li><a href="nosotros.html">Nosotros</a></li>
-					<li><a href="contacto.html">Contacto</a></li>
+		<div class="navbar navbar-expand menu">
+			<div class="container-fluid justify-content-center">
+				<ul class="navbar-nav animate__animated animate__backInLeft">
+					<li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+					<li class="nav-item"><a class="nav-link" href="curso.html">Cursos</a></li>
+					<li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+					<li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+					<li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
 				</ul>
-			</nav>
+			</div>
 		</div>
 	</div>
-	<main>
-		<h2>Sobre mi</h2>
-		<div class="about">
-			<img class="imagen_half_cover" src="../multimedia/enbote.jpg"
-				alt="estoy en un lago sobre un bote apuntando con mi camara de fotos">
-			<div class="textohalf">
+	<main class="container-fluid">
+		<div class="row justify-content-center align-items-center">
+			<h2 class="gradiente">Sobre mi</h2>
+			<div class="col-md-10 col-lg-5">
+				<img class="imagen" src="../multimedia/enbote.jpg"
+					alt="estoy en un lago sobre un bote apuntando con mi camara de fotos">
+			</div>
+			<div class="texto col-sm-10 col-md-10 col-lg-5">
 				<!-- informacion sobre mi-->
+				<H5>Apasionado de la fotografia</H5>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, veritatis odio architecto nobis
 					dolore earum
 					quos dicta? Quasi nobis fuga, unde velit quis autem, voluptatem, dolore accusamus tempore voluptates
@@ -74,6 +76,13 @@
 					src="../multimedia/logo-instagram.png" alt="link  instagram"></a>
 		</div>
 	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+		integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+		integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+		crossorigin="anonymous"></script>
 
 </body>
 

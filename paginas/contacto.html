@@ -6,12 +6,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Fotografia de Naturaleza</title>
-	<meta name="description" content="Curso de fotografía digital de naturaleza.">
+	<meta name="description" content="Fotografía digital de naturaleza.">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link rel="stylesheet" href="../estilos/estilos.css" />
-	<link
-    	rel="stylesheet"
-    	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-	/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -19,94 +18,115 @@
 		<a name="arriba"></a>
 		<div class="logo">
 			<a href="../index.html"> <img class="logo" src="../multimedia/logo.png" alt="icono camara fotografia"> </a>
-			<h1>Fotografia de la naturaleza</h1>
+			<h1 class="gradiente">Fotografia de la naturaleza</h1>
 		</div>
-		<div>
-			<nav>
-				<ul class="menu  animate__animated animate__backInLeft">
-					<li><a href="../index.html">Inicio</a></li>
-					<li><a href="curso.html">Cursos y talleres</a></li>
-					<li><a href="galeria.html">Galeria</a></li>
-					<li><a href="nosotros.html">Nosotros</a></li>
-					<li><a href="contacto.html">Contacto</a></li>
+		<div class="navbar navbar-expand menu">
+			<div class="container-fluid justify-content-center">
+				<ul class="navbar-nav animate__animated animate__backInLeft">
+					<li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+					<li class="nav-item"><a class="nav-link" href="curso.html">Cursos</a></li>
+					<li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+					<li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+					<li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
 				</ul>
-			</nav>
+			</div>
 		</div>
 	</div>
-	<main class="fondo">
-		<h2 id="contacForm">Formulario de contacto</h2>
-		<div class="contacto">
-			<form action="" method="get">
-				<label for="nombre">
-					<input type="text" name="nombre" id="nombre" placeholder="Nombre" required> <br>
-				</label>
-				<label for="direccion">
-					<input type="text" name="direccion" placeholder="Direccion" required> <br>
-				</label>
-				<label for="localidad">
-					<input type="text" name="localidad" placeholder="Localidad" required> <br>
-				</label>
-				<label for="provincia">
-					<select name="provincia" required>
-						<option value="" hidden selected>Selecciona una Provincia</option>
-						<option Value="Buenos_Aires">Buenos Aires </option>
-						<option value="Caba">Caba</option>
-						<option value="Catamarca">Catamarca</option>
-						<option value="Chaco">Chaco</option>
-						<option value="Chubut">Chubut</option>
-						<option value="Cordoba">Cérdoba</option>
-						<option value="Corrientes">Corrientes</option>
-						<option value="Entre_Rios">Entre Rios</option>
-						<option value="Formosa">Formosa</option>
-						<option value="Jujuy">Jujuy</option>
-						<option value="La_Pampa">La Pampa</option>
-						<option value="La_Rioja">La Rioja</option>
-						<option value="Mendoza">Mendoza</option>
-						<option value="Misiones">Misiones</option>
-						<option value="Neuquen">Neuquén</option>
-						<option value="Rio_Negro">Río Negro</option>
-						<option value="Salta">Salta</option>
-						<option value="San_Juan">San Juan</option>
-						<option value="San_Luis">San Luis</option>
-						<option value="Santa_Cruz">Santa Cruz</option>
-						<option value="Santa_Fe">Santa Fe</option>
-						<option value="Santiago_del_Estero">Santiago del Estero</option>
-						<option value="Tierra_del_Fuego">Tierra del Fuego</option>
-						<option value="Tucuman">Tucumán</option>
-					</select><br>
-				</label>
-
-				<label for="codpostal">
-					<input type="text" name="codpostal" placeholder="Codigo Postal" required> <br>
-				</label>
-				<label for="telefono">
-					<input type="text" name="telefono" placeholder="Telefono" required> <br>
-				</label>
-
-				<Label for="email">
-					<input type="email" name="email" placeholder="Email" required> <br>
-				</Label>
-
-				<label for="mensaje">
-					<textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea> <br>
-				</label>
-
-				<label for="chek1" class="check">
-					<input type="checkbox" name="check1" value="si">
-					<p> Posee camara Reflex-Mirrorless </p>
-				</label><br>
-
-				<label for="check2" class="check">
-					<input type="checkbox" name="check2" value="si">
-					<p> Tiene conocimientos previos de fotografia? </p>
-				</label><br>
-
-				<input class="boton" type="submit" value="Enviar Formulario"> </input> <br>
-				<input class="boton" type="reset" value="Limpiar Formulario"> </input>
-			</form>.
+	<main class="fondo container-fluid">
+		<h2 class="gradiente">Formulario de contacto</h2>
+		<div class="row justify-content-center">
+			<div class="form-group contacto">
+				<form action="" method="get">
+					<div class="mb-1">
+						<label for="nombre">
+							<input class="form-control" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+						</label>
+					</div>
+					<div class="mb-1">
+						<label for="direccion">
+							<input class="form-control" type="text" name="direccion" placeholder="Direccion" required>
+						</label>
+					</div>
+					<div class="mb-1">
+						<label for="localidad">
+							<input class="form-control" type="text" name="localidad" placeholder="Localidad" required>
+						</label>
+					</div>
+					<div class="mb-1">
+						<label for="provincia">
+							<select class="form-control" name="provincia" required>
+								<option value="" hidden selected>Selecciona una Provincia</option>
+								<option Value="Buenos_Aires">Buenos Aires </option>
+								<option value="Caba">Caba</option>
+								<option value="Catamarca">Catamarca</option>
+								<option value="Chaco">Chaco</option>
+								<option value="Chubut">Chubut</option>
+								<option value="Cordoba">Cérdoba</option>
+								<option value="Corrientes">Corrientes</option>
+								<option value="Entre_Rios">Entre Rios</option>
+								<option value="Formosa">Formosa</option>
+								<option value="Jujuy">Jujuy</option>
+								<option value="La_Pampa">La Pampa</option>
+								<option value="La_Rioja">La Rioja</option>
+								<option value="Mendoza">Mendoza</option>
+								<option value="Misiones">Misiones</option>
+								<option value="Neuquen">Neuquén</option>
+								<option value="Rio_Negro">Río Negro</option>
+								<option value="Salta">Salta</option>
+								<option value="San_Juan">San Juan</option>
+								<option value="San_Luis">San Luis</option>
+								<option value="Santa_Cruz">Santa Cruz</option>
+								<option value="Santa_Fe">Santa Fe</option>
+								<option value="Santiago_del_Estero">Santiago del Estero</option>
+								<option value="Tierra_del_Fuego">Tierra del Fuego</option>
+								<option value="Tucuman">Tucumán</option>
+							</select>
+						</label>
+					</div>
+					<div class="mb-1">
+						<label for="codpostal">
+							<input class="form-control" type="text" name="codpostal" placeholder="Codigo Postal" required>
+						</label>
+					</div>
+					<div class="mb-1">
+						<label for="telefono">
+							<input class="form-control" type="text" name="telefono" placeholder="Telefono" required>
+						</label>
+					</div>
+					<div class="mb-1">
+						<Label for="email">
+							<input class="form-control" type="email" name="email" placeholder="Email" required>
+						</Label>
+					</div>
+					<div class="mb-1">
+						<label for="mensaje">
+							<textarea class="form-control" name="mensaje" cols="30" rows="10"
+								placeholder="Mensaje"></textarea>
+						</label>
+					</div>
+					<div class="mb-1">
+						<label for="chek1" class="check">
+							<input class="form-check-input" type="checkbox" name="check1" value="si">Posee camara
+							Reflex-Mirrorless
+						</label>
+					</div>
+					<div class="mb-1">
+						<label for="check2" class="check">
+							<input class="form-check-input" type="checkbox" name="check2" value="si">Tiene conocimientos
+							previos de fotografia?
+						</label>
+					</div>
+					<div class="mb-1">
+						<input class="btn btn-primary boton" type="submit" value="Enviar Formulario"> </input>
+					</div>
+					<div class="mb-1">
+						<input class="btn btn-primary boton" type="reset" value="Limpiar Formulario"> </input>
+					</div>
+				</form>
+			</div>
 		</div>
-		<p class="aviso">Pare recibir mas informacion sobre los cursos y talleres, completa el formulario y nos
-			contactaremos con tigo</p>
+		<p class="aviso gradiente">Pare recibir mas informacion sobre los cursos y talleres, completa el formulario
+			y nos contactaremos con tigo </p>
 	</main>
 
 	<footer class="footer">
@@ -125,6 +145,7 @@
 					src="../multimedia/logo-instagram.png" alt="link  instagram"></a>
 		</div>
 	</footer>
+
 </body>
 
 </html>

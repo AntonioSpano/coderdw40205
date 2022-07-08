@@ -6,12 +6,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Fotografia de Naturaleza</title>
-	<meta name="description" content="Curso de fotografía digital de naturaleza.">
+	<meta name="description" content="Fotografía digital de naturaleza.">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link rel="stylesheet" href="estilos/estilos.css" />
-	<link
-    	rel="stylesheet"
-    	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-	/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -19,31 +18,29 @@
 		<a name="arriba"></a>
 		<div class="logo">
 			<a href="index.html"> <img class="logo" src="multimedia/logo.png" alt="icono camara fotografia"> </a>
-			<h1>Fotografia de la naturaleza</h1>
+			<h1 class="gradiente">Fotografia de la naturaleza</h1>
 		</div>
-		<div>
-			<nav>
-				<ul class="menu animate__animated animate__backInLeft">
-					<li><a href="index.html">Inicio</a></li>
-					<li><a href="paginas/curso.html">Cursos y talleres</a></li>
-					<li><a href="paginas/galeria.html">Galeria</a></li>
-					<li><a href="paginas/nosotros.html">Nosotros</a></li>
-					<li><a href="paginas/contacto.html">Contacto</a></li>
+		<div class="navbar navbar-expand menu">
+			<div class="container-fluid justify-content-center">
+				<ul class="navbar-nav animate__animated animate__backInLeft">
+					<li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+					<li class="nav-item"><a class="nav-link" href="paginas/curso.html">Cursos</a></li>
+					<li class="nav-item"><a class="nav-link" href="paginas/galeria.html">Galeria</a></li>
+					<li class="nav-item"><a class="nav-link" href="paginas/nosotros.html">Nosotros</a></li>
+					<li class="nav-item"><a class="nav-link" href="paginas/contacto.html">Contacto</a></li>
 				</ul>
-			</nav>
+			</div>
 		</div>
 	</div>
-
-	<main>
-		<div class="bodyGrid">
-			<div class="imgIndex1">
-				<img src="multimedia/lago-3.jpg "
+	<main class="container-fluid">
+		<div class="row justify-content-center align-items-center">
+			<h2 class="gradiente">Que es la fotografia de naturaleza?</h2>
+			<div class="col">
+				<img class="imagen" src="multimedia/lago-3.jpg "
 					alt="vista de un lago con el reflejo de la otra orilla cubierta de arboles">
 			</div>
-			<div class="texto1 textofull">
-				<h2>Que es la fotografia de naturaleza</h2>
-				<p>
-					La fotografía de naturaleza es una modalidad del amplio tema fotográfico que trata de enmarcar en el
+			<div class="texto">
+				<p>	La fotografía de naturaleza es una modalidad del amplio tema fotográfico que trata de enmarcar en el
 					papel la
 					grandiosidad de los
 					paisajes, la fauna, la flora y los pequeños detalles. La fotografía de la naturaleza tiende a
@@ -61,7 +58,7 @@
 					prescripciones legales que se deben tener en cuenta antes de iniciarse en estas técnicas
 					fotográficas.
 				</p>
-				<h2>Importancia de la fotografía de naturaleza para el mundo</h2>
+				<h2 class="gradiente">Importancia de la fotografía de naturaleza para el mundo</h2>
 				<p>
 					Actualmente este tipo de fotografía cumple un papel fundamental para la historia del mundo. No solo
 					nos ha
@@ -100,11 +97,13 @@
 				</p>
 			</div>
 
-			<div class="imgIndex2">
-				<img src="multimedia/mono-caraya.jpg " alt="Mono caraya hembra masticando follaje sobre un arbol">
+
+			<div class="col-md-10 col-lg-5">
+				<img class="imagen" src="multimedia/mono-caraya.jpg "
+					alt="Mono caraya hembra masticando follaje sobre un arbol">
 			</div>
 
-			<div class="texto2 textohalf">
+			<div class="col-sm-10 col-md-10 col-lg-5 texto ">
 				<h3>¿Qué tipos de imágenes puedes tomar dentro de la fotografía de naturaleza?</h3>
 				<p>
 					Dentro de la categoría de la fotografía de naturaleza, se encuentran lo que se llaman sub categorías
@@ -129,32 +128,37 @@
 				</ul>
 			</div>
 
-
-			<h2 class="titulo3">Cámaras para fotografía de naturaleza</h2>
-
-			<div class="imgIndex3">
-				<img src="multimedia/teleobjetivos-para-naturaleza-600x400.jpg"
+			<h2 class="col-12 gradiente">Cámaras para fotografía de naturaleza</h2>
+			<div class="col-md-10 col-lg-5">
+				<img class="imagen" src="multimedia/teleobjetivos-para-naturaleza-600x400.jpg"
 					alt="camara de fotos con teleobjetivo montada en tripode">
 			</div>
-
-			<div class="texto3 textohalf" >
+			<div class="col-lg-5 col-md-10  texto">
 				<h3>La cámara de los fotógrafos profesionales de naturaleza</h3>
 				<p>
 					La fotografía de naturaleza requiere de un equipo fotográfico compuesto por cámaras objetivos,
-					teleobjetivos etc. adecuados al campo en el trabajemos. Vamos a analizar primero el equipo que suelen llevar los
-					fotógrafos	profesionales y después veremos que necesita el fotógrafo que empieza con poco dinero.
+					teleobjetivos etc. adecuados al campo en el trabajemos. Vamos a analizar primero el equipo que
+					suelen llevar los
+					fotógrafos profesionales y después veremos que necesita el fotógrafo que empieza con poco dinero.
 					La cámara fotográfica es la herramienta principal del fotógrafo de naturaleza, por eso es tan
-					importante que responda a las expectativas que ha depositado en ella. No obstante, la oferta es muy amplia, así
-					como las características de los distintos formatos y los campos de la fotografía de naturaleza. La elección
-					del equipo fotográfico también depende mucho de las preferencias y gustos personales e incluso manías de cada
+					importante que responda a las expectativas que ha depositado en ella. No obstante, la oferta es muy
+					amplia, así
+					como las características de los distintos formatos y los campos de la fotografía de naturaleza. La
+					elección
+					del equipo fotográfico también depende mucho de las preferencias y gustos personales e incluso
+					manías de cada
 					fotógrafo.
 				</p>
+			</div>
+			<div class="texto col-12">
 				<h4>Escoger el formato del sensor</h4>
 				<p>
 					El equipo del fotógrafo de naturaleza comienza por su cámara. Salvo contadas excepciones,
-					encontraremos más práctica una cámara APS-C o MFT que una cámara de formato completo. Esto es debido a que el
+					encontraremos más práctica una cámara APS-C o MFT que una cámara de formato completo. Esto es debido
+					a que el
 					factor de multiplicación nos favorece a la hora de acercarnos a los animales salvajes. No obstante,
-					muchos fotógrafos de naturaleza prefieren el fotograma completo debido al plus de calidad que proporciona
+					muchos fotógrafos de naturaleza prefieren el fotograma completo debido al plus de calidad que
+					proporciona
 					cuando se usan sensibilidades altas.
 				</p>
 				<h4>Una cámara fotográfica rápida te ayudará a captar el momento</h4>
@@ -165,8 +169,9 @@
 				</p>
 			</div>
 
-			<div class="texto4 textofull">
-				<h3>Para fotografiar animales con éxito debes ser sigiloso</h3>
+
+			<div class="texto">
+				<h4>Para fotografiar animales con éxito debes ser sigiloso</h4>
 				<p>
 					También es útil que el obturador sea lo más silencioso posible. A veces dispararemos relativamente
 					cerca de
@@ -176,7 +181,7 @@
 					sorprendentemente suave; pero las mirrorless, empleadas con el obturador electrónico, son totalmente
 					silenciosas.
 				</p>
-				<h3>Antes o después tendrás que fotografiar con mal tiempo</h3>
+				<h4>Antes o después tendrás que fotografiar con mal tiempo</h4>
 				<p>
 					Las cámaras profesionales están selladas contra el agua y el polvo, algo también necesario en este
 					tipo de
@@ -186,38 +191,47 @@
 			</div>
 
 			<div>
-				<h2 class="titulo5"> Objetivos y teleobjetivos para naturaleza</h2>
+				<h2 class="gradiente"> Objetivos y teleobjetivos para naturaleza</h2>
 			</div>
-			<div class="imgIndex5">
-				<img src="multimedia/objetivos-fotograficos-para-naturaleza.jpg"
+			<div class="col-md-10 col-lg-5">
+				<img class="imagen" src="multimedia/objetivos-fotograficos-para-naturaleza.jpg"
 					alt="objetivos para fotografia de naturaleza">
 			</div>
-
-			<div class="texto5 textohalf">
+			<div class="col-md-10 col-lg-5 texto">
 				<h4>El objetivo o teleobjetivo que necesitas depende del campo de la fotografía de
-					naturaleza	que quieras	practicar
+					naturaleza que quieras practicar
 				</h4>
 				<p>Para hablar de los objetivos, nos referiremos a las focales en 35mm. En cualquier otro formato
 					podemos
 					obtener
 					su
-					equivalencia aplicando el correspondiente factor de multiplicación. (1,5x en APS-C y 2x en MFT)</p>
+					equivalencia aplicando el correspondiente factor de multiplicación. (1,5x en APS-C y 2x en MFT)
+				</p>
 				<p>La fotografía de naturaleza abarca muchos campos, por lo que la gama de objetivos que podemos
 					necesitar es
-					relativamente amplia.</p>
+					relativamente amplia.
+				</p>
 				<h4>Teleobjetivos para fotografiar fauna salvaje</h4>
 				<p>La fotografía de fauna salvaje requiere el empleo de potentes teleobjetivos. Poderosas focales de 400
-					f/2,8 o	600	f/4 están a la orden del día. Son voluminosas y pesadas, y sus precios pueden moverse entre los
-					6.000 y los	10.000	u$s</p>
-				<h4>Objetivos macro para lo más pequeño</h4>
-				<p>La fotografía de insectos, flores o pequeños detalles en general requiere del empleo de objetivos
-					macro. La focal	más común es la de 100mm, otras focales mayores como 180 o 200mm nos pueden permitir fotografiar sin
-					acercarnos tanto a los insectos. Estos objetivos se pueden complementar con diversos accesorios para lograr
-					mayores	aumentos,como lentes de aproximación o tubos de extensión.</p>
+					f/2,8 o 600 f/4 están a la orden del día. Son voluminosas y pesadas, y sus precios pueden moverse
+					entre los
+					6.000 y los 10.000 u$s
+				</p>
 			</div>
 
-			<div class="texto6 textofull">
-				<h2>Iluminación fotográfica en la naturaleza</h2>
+			<div class="texto">
+				<h4>Objetivos macro para lo más pequeño</h4>
+				<p>La fotografía de insectos, flores o pequeños detalles en general requiere del empleo de objetivos
+					macro. La focal más común es la de 100mm, otras focales mayores como 180 o 200mm nos pueden permitir
+					fotografiar sin
+					acercarnos tanto a los insectos. Estos objetivos se pueden complementar con diversos accesorios para
+					lograr
+					mayores aumentos,como lentes de aproximación o tubos de extensión.
+				</p>
+			</div>
+
+			<div class="texto">
+				<h2 class="gradiente">Iluminación fotográfica en la naturaleza</h2>
 				<p>La fotografía de naturaleza no suele requerir de complejos equipos de iluminación. Casi siempre se
 					trabaja
 					con
@@ -231,17 +245,18 @@
 					de
 					flash da viveza a los colores y añade un punto de luz al ojo del sujeto. También puede usarse para
 					suavizar
-					sombras cuando fotografiamos flores, mariposas, etc. a plena luz.</p>
+					sombras cuando fotografiamos flores, mariposas, etc. a plena luz.
+				</p>
 				<p>En macrofotografía se emplean en ocasiones los flashes de anillo, aunque no son del gusto de todos
 					los
 					fotógrafos
 					al proporcionar una luz muy plana. Cuando se fotografían animales nocturnos también se necesitarán
 					varias
 					unidades
-					de flash para proporcionar un aspecto natural a la escena.</p>
+					de flash para proporcionar un aspecto natural a la escena.
+				</p>
 
-				<h2 class="texto7">Otros accesorios que emplean los fotógrafos de naturaleza</h2>
-
+				<h2 class="gradiente">Otros accesorios que emplean los fotógrafos de naturaleza</h2>
 				<h4>El trípode</h4>
 				<p>Cuando trabajamos con teleobjetivos tan voluminosos y pesados como los que comentamos, se hace
 					imprescindible
@@ -253,21 +268,24 @@
 					tipos nos permiten movimientos de precisión milimétrica con objetivos ligeros y otros movimientos
 					rápidos y
 					ágiles
-					con potentes teleobjetivos para seguir a los animales.</p>
+					con potentes teleobjetivos para seguir a los animales.
+				</p>
 
 				<h4>Escondites o hides y otros sistemas de ocultación</h4>
 				<p>Para poder fotografiar algunos animales requeriremos un equipo más especializado. A veces
 					necesitaremos
 					camuflarnos empleando escondites o hides, redes de camuflaje, etc. En otras ocasiones requeriremos
 					equipos
-					especiales como barreras infrarrojas para fotografiar a los animales más huidizos.</p>
+					especiales como barreras infrarrojas para fotografiar a los animales más huidizos.
+				</p>
 
 				<h4>Una mochila para llevar el equipo fotográfico</h4>
 				<p>Una mochila amplia y cómoda, que nos permita llevar el equipo y un trípode también es necesaria. Si
 					realizamos
 					largos viajes para lograr nuestras fotografías, también querremos llevar un ordenador personal donde
 					poder
-					descargar, ver, seleccionar, guardar y si es necesario, corregir con fluidez nuestras fotos.</p>
+					descargar, ver, seleccionar, guardar y si es necesario, corregir con fluidez nuestras fotos.
+				</p>
 
 				<h4>Vestimenta y calzado adecuados</h4>
 				<p>No es lo mismo ir a fotografiar fauna salvaje que ir a sacar fotos a una boda o a la playa. Y, aunque
@@ -275,31 +293,33 @@
 					necesario vestirse en Coronel Tapioca, es buena idea llevar ropas de tonos neutros y adecuada al
 					clima donde
 					vamos
-					a trabajar, así como el calzado conveniente.</p>
-
+					a trabajar, así como el calzado conveniente.
+				</p>
 			</div>
 		</div>
 
-	</main>
-	<section">
-		<H2 class=>Recuperando la fauna silvestre</H2>
-		<div class="section">
-			<div class="iframe">
-				<iframe width="48%" height="380" src="https://www.youtube.com/embed/zA_L1eQnHBg"
+		<section class="row justify-content-center align-items-center">
+			<H2 class="gradiente"> Recuperando la fauna silvestre</H2>
+			<div class="col-md-10 col-lg-4">
+				<iframe width=90% height=320em src="https://www.youtube.com/embed/zA_L1eQnHBg"
 					title="YouTube video player" frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen></iframe>
+					allowfullscreen>
+				</iframe>
 			</div>
-			<div class="textohalf">
-				<H3>Liberación del Condor Adimo "MORENO", Cuesta del Lipan, Jujuy</h3>
-				<p>26/08/13 Moreno, un ejemplar de Condor Andino semi adulto fue liberado esta mañana en cuesta de lipan,
-					participaron de la ceremonia comunidades aborigenes de la zona. moreno fue rescatado en la provincia el
+			<div class="col-md-10 col-lg-4" texto>
+				<H3>Liberación del Condor Andino "MORENO", Cuesta del Lipan, Jujuy</H3>
+				<p>26/08/13 Moreno, un ejemplar de Condor Andino semi adulto fue liberado esta mañana en cuesta de
+					lipan,
+					participaron de la ceremonia comunidades aborigenes de la zona. moreno fue rescatado en la
+					provincia
+					el
 					22 de julio de 2010, al haber recibido un disparo de escopeta, despues de tres años de exitosa
-					recuperacion pudo ser devuelto a su habitat.</p>
+					recuperacion pudo ser devuelto a su habitat.
+				</p>
 			</div>
-		</div>
-	</section>
-
+		</section>
+	</main>
 	<footer class="footer">
 		<a href="#arriba" class="volver">Volver arriba</a>
 		<p>Todos los Derechos Reservados</p>
@@ -314,6 +334,14 @@
 					src="multimedia/logo-instagram.png" alt="link  instagram"></a>
 		</div>
 	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+		integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+		integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+		crossorigin="anonymous"></script>
+
 </body>
 
 </html>
