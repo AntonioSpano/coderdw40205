@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&family=Roboto:ital,wght@0,100;0,400;1,100&display=swap");
+* {
+  Margin: 0;
+  padding: 0; }
+
+/*paleta de colores*/
+/*logo header*/
+.logo {
+  background-color: #070c56;
+  display: inline-block;
+  width: 100%; }
+  .logo img {
+    height: calc(1.4em + 1vw);
+    width: calc(1.5em + 1.3vw);
+    float: left;
+    margin: 1%; }
+    .logo img:hover {
+      animation: tiembla 0.3s; }
+
+/*Animaciones*/
+@keyframes tiembla {
+  0% {
+    transform: rotateZ(-6deg); }
+  50% {
+    transform: rotateZ(0deg) scale(0.8); }
+  100% {
+    transform: rotateZ(6deg); } }
+
+@keyframes fader {
+  0% {
+    opacity: 0.1; }
+  25% {
+    opacity: 0.25; }
+  50% {
+    opacity: 0.5; }
+  75% {
+    opacity: 0.75; }
+  100% {
+    opacity: 1; } }
+
+@keyframes animagen {
+  0% {
+    scale: 1; }
+  50% {
+    scale: .95; }
+  100% {
+    scale: 1; } }
+
+/*Estilos generales*/
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #e3e2e2; }
+
+.fondo {
+  background-image: url(../multimedia/Ushuaia-132.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: fader 1s; }
+
+h1 {
+  color: white;
+  padding-top: 1%;
+  font-size: calc(1.2em + 1vw); }
+
+h2 {
+  font-size: calc(1em + 1vw);
+  color: black; }
+
+h3 {
+  margin-top: .1%;
+  margin-bottom: .05%;
+  font-size: calc(1em + 0.5vw);
+  padding-right: 2%;
+  color: black;
+  width: fit-content; }
+
+h4 {
+  margin-top: 7px;
+  font-size: calc(.8em + 0.4vw);
+  padding-left: 10px;
+  padding-right: 10px;
+  color: black;
+  width: fit-content; }
+
+.gradiente {
+  background: linear-gradient(to right, #070c56, rgba(47, 47, 254, 0.995));
+  color: white; }
+
+/*empieza menu nav*/
+.menu {
+  font-family: 'Roboto';
+  font-size: calc(0.75em + 0.75vw); }
+  .menu li a {
+    background-color: #7e7e7e;
+    color: white; }
+    .menu li a:hover {
+      color: black;
+      background-color: white; }
+
+/*termina menu nav*/
+/*empieza footer*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: calc(2.6em + 1.4vw);
+  background: linear-gradient(90deg, #447bee 0%, #c8caf7 35%, #c8caf7 59%, #4279ec 100%); }
+  .footer a {
+    color: white;
+    padding: .5vw;
+    margin: .1vw;
+    width: fit-content;
+    font-size: calc(.4em + .8vw); }
+  .footer p {
+    color: white;
+    width: fit-content;
+    padding: .5vw;
+    margin: .1vw;
+    font-size: calc(.4em + .8vw); }
+  .footer div {
+    margin: .1vw;
+    padding: .1vw; }
+  .footer img {
+    width: calc(1.2em + 1vw);
+    height: calc(1.2em + 1vw); }
+    .footer img:hover {
+      animation: tiembla 0.4s; }
+
+/*termina footer*/
+/*empieza index*/
+.texto p {
+  width: 94%;
+  padding: 1%;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  color: black;
+  font-size: calc(.7em + .4vw); }
+
+.texto ul {
+  width: 94%;
+  padding: 1%;
+  margin-left: 2vw;
+  color: black;
+  font-size: calc(.7em + .4vw); }
+
+.imagen {
+  width: 98%;
+  margin: 0.2%;
+  border-radius: 2%;
+  animation: fader 1s; }
+
+/*termian index*/
+/*empieza contacto*/
+.contacto form {
+  width: 330px;
+  text-align: center;
+  margin: auto;
+  color: black; }
+  .contacto form form-control {
+    color: black;
+    font-family: 'Baloo 2', cursive;
+    font-size: 15px;
+    padding: 2px;
+    width: 250px; }
+  .contacto form input {
+    background-color: rgba(243, 244, 254, 0.6);
+    color: black;
+    transition: all 0.5s; }
+    .contacto form input:hover {
+      background-color: white;
+      color: black; }
+  .contacto form select {
+    font-family: 'Baloo 2', cursive;
+    font-size: 15px;
+    padding: 2px;
+    width: 250px;
+    height: 40px;
+    background-color: rgba(243, 244, 254, 0.6);
+    color: black;
+    transition: all 0.5s; }
+    .contacto form select:hover {
+      background-color: white;
+      color: black; }
+  .contacto form textarea {
+    font-size: 15px;
+    background-color: rgba(243, 244, 254, 0.6);
+    transition: all 0.5s; }
+    .contacto form textarea:hover {
+      background-color: white;
+      color: black; }
+
+.check {
+  display: inline-block;
+  font-family: 'Baloo 2', cursive;
+  font-size: calc(.7em + 0.3vw);
+  width: calc(12em + 8vw);
+  background-color: rgba(243, 244, 254, 0.6);
+  border-radius: 5px; }
+  .check:hover {
+    background-color: white;
+    transition: all 0.5s; }
+  .check input {
+    width: 15px;
+    float: left;
+    padding: 2px;
+    margin-top: 2px;
+    border: solid;
+    border-color: #447bee; }
+
+.boton {
+  background-color: rgba(243, 244, 254, 0.6);
+  color: black; }
+
+/*termina contacto*/
+/*galeria imagenes*/
+.galeria img {
+  width: 96vw;
+  margin: 0.2%;
+  padding: 1%;
+  border-radius: 3%; }
+
+.galeria a img {
+  width: 100%;
+  height: auto; }
+  .galeria a img:hover {
+    animation: animagen 0.5s; }
+
+.par {
+  display: none; }
+
+/*termina galeria*/
+@media screen and (max-width: 990px) {
+  .par {
+    display: block; } }

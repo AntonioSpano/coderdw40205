@@ -1,0 +1,291 @@
+* {
+	Margin: 0;
+	padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&family=Roboto:ital,wght@0,100;0,400;1,100&display=swap');
+
+
+/*paleta de colores*/
+$gradInit:rgb(7, 12, 86);
+$gradEnd:rgba(47, 47, 254, 0.995);
+$colorFontTitle:white;
+$colorFontSubtitle:black;
+$colorBodyBack:rgb(227, 226, 226);
+$colorMenuFont:white;
+$colorMenuBack: #7e7e7e;
+$colorMenuFont2:black;
+$colorMenuBack2:white;
+$footGradInit:rgba(68,123,238,1);
+$footGradMid:rgba(200,202,247,1);
+$footGradEnd:rgba(66,121,236,1);
+$colorFootFont:white;
+$colorFontGral:black;
+$colorContactBack1:rgba(243, 244, 254, 0.6);
+$colorContactFont1:black;
+$colorContactBack2:white;
+$colorContactFont2: black;
+
+/*logo header*/
+.logo {
+	background-color:$gradInit;
+	display: inline-block;
+	width: 100%;
+    img {
+        height: calc(1.4em + 1vw);
+        width: calc(1.5em + 1.3vw);
+        float: left;
+        margin: 1%;
+            &:hover{
+            animation: tiembla 0.3s;
+            }
+    }
+}
+
+/*Animaciones*/
+@keyframes tiembla{
+	0% {transform:rotateZ(-6deg);}
+	50%{transform:rotateZ( 0deg) scale(.8);}
+	100%{transform:rotateZ( 6deg);}
+}
+
+@keyframes fader{
+	0%{opacity: 0.1;}
+	25%{opacity: 0.25;}
+	50%{opacity: 0.5;}
+	75%{opacity: 0.75;}
+	100%{opacity: 1;}
+}
+
+@keyframes animagen{
+	0%{scale: 1;}
+	50%{scale: .95;}
+	100%{scale: 1;}
+}
+
+/*Estilos generales*/
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: $colorBodyBack;
+}
+
+.fondo {
+	background-image: url(../multimedia/Ushuaia-132.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+    animation: fader 1s;
+}
+
+h1 {
+	color:$colorFontTitle;
+	padding-top: 1%;
+	font-size: calc(1.2em + 1vw);
+}
+
+h2 {
+	font-size: calc(1em + 1vw);
+	color:$colorFontSubtitle;
+}
+
+h3 {
+	margin-top: .1%;
+	margin-bottom: .05%;
+	font-size: calc(1em + 0.5vw);
+	padding-right: 2%;
+	color:$colorFontSubtitle;
+	width: fit-content;
+}
+
+h4 {
+	margin-top: 7px;
+	font-size: calc(.8em + 0.4vw);
+	padding-left: 10px;
+	padding-right: 10px;
+	color: $colorFontSubtitle;
+	width: fit-content;
+}
+
+.gradiente{
+	background:linear-gradient(to right,$gradInit,$gradEnd);
+	color:$colorFontTitle;
+}
+
+/*empieza menu nav*/
+.menu {
+	font-family: 'Roboto';
+	font-size: calc(0.75em + 0.75vw);
+    li a {
+        background-color: $colorMenuBack;
+        color: $colorMenuFont;
+        &:hover {
+            color:$colorMenuFont2;
+            background-color:$colorMenuBack2;
+        }
+    }
+}
+/*termina menu nav*/
+
+/*empieza footer*/
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: calc(2.6em + 1.4vw);
+	background: linear-gradient(90deg, $footGradInit 0%, $footGradMid 35%, $footGradMid 59%, $footGradEnd 100%);
+    a {
+        color: $colorFootFont;
+        padding: .5vw;
+        margin: .1vw;
+        width: fit-content;
+        font-size: calc(.4em + .8vw);
+    }
+    p {
+        color: $colorFootFont;
+        width: fit-content;
+        padding: .5vw;
+        margin: .1vw;
+        font-size: calc(.4em + .8vw);
+    }
+    div {
+        margin: .1vw;
+        padding: .1vw;
+    }
+    img {
+        width: calc(1.2em + 1vw);
+        height: calc(1.2em + 1vw);
+        &:hover{
+            animation: tiembla 0.4s;
+        }
+    }
+}
+/*termina footer*/
+
+/*empieza index*/
+.texto{
+    p {
+        width: 94%;
+        padding: 1%;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        color: $colorFontGral;
+        font-size: calc(.7em + .4vw);
+    }
+    ul {
+        width: 94%;
+        padding: 1%;
+        margin-left: 2vw;
+        color: $colorFontGral;
+        font-size: calc(.7em + .4vw);
+    }
+}
+
+.imagen {
+	width: 98%;
+	margin: 0.2%;
+	border-radius: 2%;
+	animation: fader 1s;
+}
+/*termian index*/
+
+/*empieza contacto*/
+.contacto form{
+	width: 330px;
+	text-align: center;
+	margin: auto;
+    color:$colorContactFont1;
+    form-control {
+        color:$colorContactFont1;
+        font-family: 'Baloo 2', cursive;
+        font-size: 15px;
+        padding: 2px;
+        width: 250px;
+    }
+    input{
+        background-color: $colorContactBack1;
+        color: $colorContactFont1;
+        transition: all 0.5s;
+        &:hover{
+            background-color: $colorContactBack2;
+            color: $colorContactFont2;
+        }
+    }
+    select {
+        font-family: 'Baloo 2', cursive;
+        font-size: 15px;
+        padding: 2px;
+        width: 250px;
+        height: 40px;
+        background-color: $colorContactBack1;
+        color:$colorContactFont1;
+        transition: all 0.5s;
+        &:hover{
+            background-color: $colorContactBack2;
+            color:$colorContactFont2;
+        }
+    }
+    textarea {
+        font-size: 15px;
+        background-color: $colorContactBack1;
+        transition: all 0.5s;
+        &:hover{
+            background-color: $colorContactBack2;
+            color: $colorContactFont2;
+        }
+    }
+}
+
+.check {
+	display: inline-block;
+	font-family: 'Baloo 2', cursive;
+	font-size: calc(.7em + 0.3vw);
+	width: calc(12em + 8vw);
+	background-color: $colorContactBack1;
+    border-radius: 5px;
+    &:hover{
+        background-color: $colorContactBack2;
+        transition: all 0.5s;
+    }
+    input {
+        width: 15px;
+        float: left;
+        padding: 2px;
+        margin-top: 2px;
+        border: solid;
+        border-color:$footGradInit;
+    }
+}
+
+.boton {
+	background-color: $colorContactBack1;
+	color:$colorContactFont1;
+}
+/*termina contacto*/
+
+/*galeria imagenes*/
+.galeria{
+    img {
+        width: 96vw;
+        margin: 0.2%;
+        padding: 1%;
+        border-radius: 3%;
+    }
+    a img {
+        width: 100%;
+        height: auto;
+        &:hover{
+            animation: animagen 0.5s;
+            }
+    }
+}
+.par{
+	display: none;
+}
+/*termina galeria*/
+
+@media screen and (max-width: 990px) {
+	.par{
+		display: block;
+	}
+}
