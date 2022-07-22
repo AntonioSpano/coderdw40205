@@ -1,0 +1,8 @@
+
+-Se modificaron Meta Title agragando la pagina sobre la cual está.
+-Se modifico meta descripcion agregando la pagina en la cual está
+-Se agrego Meta Keywords en cada página
+
+-En una revision anterior de la página, se redimensionaron imagenes acorde a la sección, 
+agregando carpeta alta, para imagenes de 1080 para visualizacion en pagina completa en link de galería
+

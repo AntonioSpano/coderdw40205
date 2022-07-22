@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&family=Roboto:ital,wght@0,100;0,400;1,100&display=swap");
 * {
-  Margin: 0;
+  margin: 0;
   padding: 0; }
 
 /*paleta de colores*/
@@ -52,7 +52,7 @@ body {
   background-color: #e3e2e2; }
 
 .fondo {
-  background-image: url(../multimedia/Ushuaia-132.jpg);
+  background-image: url(../multimedia/alta/Ushuaia-132.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -104,8 +104,8 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   height: calc(2.6em + 1.4vw);
+  width: 100%;
   background: linear-gradient(90deg, #447bee 0%, #c8caf7 35%, #c8caf7 59%, #4279ec 100%); }
   .footer a {
     color: white;
@@ -123,8 +123,8 @@ h4 {
     margin: .1vw;
     padding: .1vw; }
   .footer img {
-    width: calc(1.2em + 1vw);
-    height: calc(1.2em + 1vw); }
+    height: calc(1.2em + 1vw);
+    width: calc(1.2em + 1vw); }
     .footer img:hover {
       animation: tiembla 0.4s; }
 
@@ -145,10 +145,10 @@ h4 {
   color: black;
   font-size: calc(.7em + .4vw); }
 
-.imagen {
+.imagen, .galeria img {
   width: 98%;
   margin: 0.2%;
-  border-radius: 2%;
+  border-radius: 3%;
   animation: fader 1s; }
 
 /*termian index*/
@@ -175,8 +175,8 @@ h4 {
     font-family: 'Baloo 2', cursive;
     font-size: 15px;
     padding: 2px;
-    width: 250px;
     height: 40px;
+    width: 250px;
     background-color: rgba(243, 244, 254, 0.6);
     color: black;
     transition: all 0.5s; }
@@ -216,14 +216,12 @@ h4 {
 /*termina contacto*/
 /*galeria imagenes*/
 .galeria img {
-  width: 96vw;
-  margin: 0.2%;
   padding: 1%;
-  border-radius: 3%; }
+  animation: none; }
 
 .galeria a img {
-  width: 100%;
-  height: auto; }
+  height: auto;
+  width: 100%; }
   .galeria a img:hover {
     animation: animagen 0.5s; }
 

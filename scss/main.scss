@@ -1,39 +1,48 @@
-* {
-	Margin: 0;
-	padding: 0;
+*   {
+    margin: 0;
+    padding: 0;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&family=Roboto:ital,wght@0,100;0,400;1,100&display=swap');
 
 
 /*paleta de colores*/
-$gradInit:rgb(7, 12, 86);
-$gradEnd:rgba(47, 47, 254, 0.995);
-$colorFontTitle:white;
-$colorFontSubtitle:black;
-$colorBodyBack:rgb(227, 226, 226);
-$colorMenuFont:white;
-$colorMenuBack: #7e7e7e;
-$colorMenuFont2:black;
-$colorMenuBack2:white;
-$footGradInit:rgba(68,123,238,1);
-$footGradMid:rgba(200,202,247,1);
-$footGradEnd:rgba(66,121,236,1);
-$colorFootFont:white;
-$colorFontGral:black;
-$colorContactBack1:rgba(243, 244, 254, 0.6);
-$colorContactFont1:black;
-$colorContactBack2:white;
-$colorContactFont2: black;
+$color:(
+gradInit:rgb(7, 12, 86),
+gradEnd:rgba(47, 47, 254, 0.995),
+colorFontTitle:white,
+colorFontSubtitle:black,
+colorBodyBack:rgb(227, 226, 226),
+colorMenuFont:white,
+colorMenuBack: #7e7e7e,
+colorMenuFont2:black,
+colorMenuBack2:white,
+footGradInit:rgba(68,123,238,1),
+footGradMid:rgba(200,202,247,1),
+footGradEnd:rgba(66,121,236,1),
+colorFootFont:white,
+colorFontGral:black,
+colorContactBack1:rgba(243, 244, 254, 0.6),
+colorContactFont1:black,
+colorContactBack2:white,
+colorContactFont2: black
+);
+
+
+@mixin size($alto,$ancho){
+    height: $alto;
+    width: $ancho;
+}
+
+
 
 /*logo header*/
 .logo {
-	background-color:$gradInit;
+	background-color:map-get($color,gradInit);
 	display: inline-block;
 	width: 100%;
     img {
-        height: calc(1.4em + 1vw);
-        width: calc(1.5em + 1.3vw);
+        @include size(calc(1.4em + 1vw),calc(1.5em + 1.3vw));
         float: left;
         margin: 1%;
             &:hover{
@@ -66,11 +75,11 @@ $colorContactFont2: black;
 /*Estilos generales*/
 body {
 	font-family: 'Roboto', sans-serif;
-	background-color: $colorBodyBack;
+	background-color: map-get($color,colorBodyBack);
 }
 
 .fondo {
-	background-image: url(../multimedia/Ushuaia-132.jpg);
+	background-image: url(../multimedia/alta/Ushuaia-132.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -78,14 +87,14 @@ body {
 }
 
 h1 {
-	color:$colorFontTitle;
+	color:map-get($color,colorFontTitle);
 	padding-top: 1%;
 	font-size: calc(1.2em + 1vw);
 }
 
 h2 {
 	font-size: calc(1em + 1vw);
-	color:$colorFontSubtitle;
+	color:map-get($color,colorFontSubtitle);
 }
 
 h3 {
@@ -93,7 +102,7 @@ h3 {
 	margin-bottom: .05%;
 	font-size: calc(1em + 0.5vw);
 	padding-right: 2%;
-	color:$colorFontSubtitle;
+	color:map-get($color,colorFontSubtitle);
 	width: fit-content;
 }
 
@@ -102,13 +111,13 @@ h4 {
 	font-size: calc(.8em + 0.4vw);
 	padding-left: 10px;
 	padding-right: 10px;
-	color: $colorFontSubtitle;
+	color: map-get($color,colorFontSubtitle);
 	width: fit-content;
 }
 
 .gradiente{
-	background:linear-gradient(to right,$gradInit,$gradEnd);
-	color:$colorFontTitle;
+	background:linear-gradient(to right,map-get($color,gradInit),map-get($color,gradEnd));
+	color:map-get($color,colorFontTitle);
 }
 
 /*empieza menu nav*/
@@ -116,11 +125,11 @@ h4 {
 	font-family: 'Roboto';
 	font-size: calc(0.75em + 0.75vw);
     li a {
-        background-color: $colorMenuBack;
-        color: $colorMenuFont;
+        background-color: map-get($color,colorMenuBack);
+        color: map-get($color,colorMenuFont);
         &:hover {
-            color:$colorMenuFont2;
-            background-color:$colorMenuBack2;
+            color:map-get($color,colorMenuFont2);
+            background-color:map-get($color,colorMenuBack2);
         }
     }
 }
@@ -131,18 +140,17 @@ h4 {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 100%;
-	height: calc(2.6em + 1.4vw);
-	background: linear-gradient(90deg, $footGradInit 0%, $footGradMid 35%, $footGradMid 59%, $footGradEnd 100%);
+	@include size(calc(2.6em + 1.4vw),100%);
+	background: linear-gradient(90deg, map-get($color,footGradInit) 0%, map-get($color,footGradMid) 35%, map-get($color,footGradMid) 59%, map-get($color,footGradEnd) 100%);
     a {
-        color: $colorFootFont;
+        color: map-get($color,colorFootFont);
         padding: .5vw;
         margin: .1vw;
         width: fit-content;
         font-size: calc(.4em + .8vw);
     }
     p {
-        color: $colorFootFont;
+        color: map-get($color,colorFootFont);
         width: fit-content;
         padding: .5vw;
         margin: .1vw;
@@ -153,8 +161,7 @@ h4 {
         padding: .1vw;
     }
     img {
-        width: calc(1.2em + 1vw);
-        height: calc(1.2em + 1vw);
+        @include size(calc(1.2em + 1vw),calc(1.2em + 1vw));
         &:hover{
             animation: tiembla 0.4s;
         }
@@ -169,14 +176,14 @@ h4 {
         padding: 1%;
         margin-left: 1vw;
         margin-right: 1vw;
-        color: $colorFontGral;
+        color: map-get($color,colorFontGral);
         font-size: calc(.7em + .4vw);
     }
     ul {
         width: 94%;
         padding: 1%;
         margin-left: 2vw;
-        color: $colorFontGral;
+        color: map-get($color,colorFontGral);
         font-size: calc(.7em + .4vw);
     }
 }
@@ -184,7 +191,7 @@ h4 {
 .imagen {
 	width: 98%;
 	margin: 0.2%;
-	border-radius: 2%;
+	border-radius: 3%;
 	animation: fader 1s;
 }
 /*termian index*/
@@ -194,44 +201,43 @@ h4 {
 	width: 330px;
 	text-align: center;
 	margin: auto;
-    color:$colorContactFont1;
+    color:map-get($color,colorContactFont1);
     form-control {
-        color:$colorContactFont1;
+        color:map-get($color,colorContactFont1);
         font-family: 'Baloo 2', cursive;
         font-size: 15px;
         padding: 2px;
         width: 250px;
     }
     input{
-        background-color: $colorContactBack1;
-        color: $colorContactFont1;
+        background-color: map-get($color,colorContactBack1);
+        color: map-get($color,colorContactFont1);
         transition: all 0.5s;
         &:hover{
-            background-color: $colorContactBack2;
-            color: $colorContactFont2;
+            background-color: map-get($color,colorContactBack2);
+            color: map-get($color,colorContactFont2);
         }
     }
     select {
         font-family: 'Baloo 2', cursive;
         font-size: 15px;
         padding: 2px;
-        width: 250px;
-        height: 40px;
-        background-color: $colorContactBack1;
-        color:$colorContactFont1;
+        @include size(40px,250px);
+        background-color: map-get($color,colorContactBack1);
+        color:map-get($color,colorContactFont1);
         transition: all 0.5s;
         &:hover{
-            background-color: $colorContactBack2;
-            color:$colorContactFont2;
+            background-color: map-get($color,colorContactBack2);
+            color:map-get($color,colorContactFont2);
         }
     }
     textarea {
         font-size: 15px;
-        background-color: $colorContactBack1;
+        background-color: map-get($color,colorContactBack1);
         transition: all 0.5s;
         &:hover{
-            background-color: $colorContactBack2;
-            color: $colorContactFont2;
+            background-color: map-get($color,colorContactBack2);
+            color: map-get($color,colorContactFont2);
         }
     }
 }
@@ -241,10 +247,10 @@ h4 {
 	font-family: 'Baloo 2', cursive;
 	font-size: calc(.7em + 0.3vw);
 	width: calc(12em + 8vw);
-	background-color: $colorContactBack1;
+	background-color: map-get($color,colorContactBack1);
     border-radius: 5px;
     &:hover{
-        background-color: $colorContactBack2;
+        background-color: map-get($color,colorContactBack2);
         transition: all 0.5s;
     }
     input {
@@ -253,27 +259,25 @@ h4 {
         padding: 2px;
         margin-top: 2px;
         border: solid;
-        border-color:$footGradInit;
+        border-color:map-get($color,footGradInit);
     }
 }
 
 .boton {
-	background-color: $colorContactBack1;
-	color:$colorContactFont1;
+	background-color: map-get($color,colorContactBack1);
+	color:map-get($color,colorContactFont1);
 }
 /*termina contacto*/
 
 /*galeria imagenes*/
 .galeria{
     img {
-        width: 96vw;
-        margin: 0.2%;
+        @extend .imagen;
         padding: 1%;
-        border-radius: 3%;
+        animation: none
     }
     a img {
-        width: 100%;
-        height: auto;
+        @include size(auto,100%);
         &:hover{
             animation: animagen 0.5s;
             }
